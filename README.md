@@ -1,0 +1,20 @@
+# reg_self_training
+Source code for our Miccai2023 submission 'Unsupervised 3D registration through optimization-guided cyclical self-training'.
+
+# Dependencies
+Please first install the following dependencies
+* Python3 (we use 3.9.7)
+* pytorch (we use 1.10.2)
+* numpy
+* scipy
+* nibabel
+
+# Data Preparation
+1. Download the Abdomen CT-CT dataset of the [Learn2Reg challenge](https://learn2reg.grand-challenge.org/Datasets/).
+2. Modify the variable path in line 8 of `data_utils.py` such that it points to the root directory of the data.
+
+# Training
+Execute `python main.py --phase train --out_dir PATH/TO/OUTDIR --gpu GPU --num_warps 2 --ice true --reg_fac 1. --augment true --adam true --sampling true`.
+
+# Testing
+In l. 9 of `test.py`, set the path to the model weights you want to use for testing (for example our `final_model.pth`). Subsequently, execute `python main.py --phase test --gpu GPU`
