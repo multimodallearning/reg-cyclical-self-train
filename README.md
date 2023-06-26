@@ -1,4 +1,4 @@
-# reg_self_training
+# reg-cyclical-self-train
 Source code for our Miccai2023 paper 'Unsupervised 3D registration through optimization-guided cyclical self-training'.
 
 # Dependencies
