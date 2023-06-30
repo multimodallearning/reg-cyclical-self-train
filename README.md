@@ -1,5 +1,5 @@
 # reg-cyclical-self-train
-Source code for our Miccai2023 paper 'Unsupervised 3D registration through optimization-guided cyclical self-training'.
+Source code for our Miccai2023 paper [Unsupervised 3D registration through optimization-guided cyclical self-training](https://arxiv.org/abs/2306.16997) [[pdf](https://arxiv.org/pdf/2306.16997.pdf)].
 
 # Dependencies
 Please first install the following dependencies
